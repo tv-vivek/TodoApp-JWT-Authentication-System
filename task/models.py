@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.contrib.auth.models import User
 import datetime
 # Create your models here.
@@ -11,3 +12,7 @@ class TodoTask(models.Model):
     createdBy=models.ForeignKey(User,on_delete=models.CASCADE)
     def __str__(self) -> str:
         return self.title
+=======
+
+# Create your models here.
+>>>>>>> 80bc9ff6232c54c345c73b938e0ac50b391fc199

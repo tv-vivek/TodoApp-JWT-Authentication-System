@@ -22,11 +22,15 @@ class LogInView(APIView):
                             "id":userObject.pk
                         }
                 # generate the jwt Token
+<<<<<<< HEAD
                 jwt_token=jwt.encode(
                                         payload=payload,
                                         key=settings.JWT_SECRET,
                                         headers={"alg": "HS256","typ": "JWT"}
                                     )
+=======
+                jwt_token=jwt.encode(payload=payload,key=settings.JWT_SECRET)
+>>>>>>> 80bc9ff6232c54c345c73b938e0ac50b391fc199
         
                 return Response({'user':userObject.username,'jwt_token':jwt_token},status=status.HTTP_200_OK)
             else:

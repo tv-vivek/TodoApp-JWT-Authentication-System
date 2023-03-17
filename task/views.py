@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from rest_framework.response import Response
 from .models import TodoTask
 from rest_framework.views import APIView
@@ -96,3 +97,7 @@ class taskUpdateView(APIView):
 
 
 
+=======
+
+# Create your views here.
+>>>>>>> 80bc9ff6232c54c345c73b938e0ac50b391fc199

@@ -16,10 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from user import urls as UserUrls
+<<<<<<< HEAD
 from task import urls as TaskUrls
+=======
+>>>>>>> 80bc9ff6232c54c345c73b938e0ac50b391fc199
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(UserUrls)),
+<<<<<<< HEAD
     path('todo/',include(TaskUrls)),
+=======
+>>>>>>> 80bc9ff6232c54c345c73b938e0ac50b391fc199
 ]
